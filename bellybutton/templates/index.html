@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belly Button Biodiversity!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+    <script src="/static/js/app.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron" style="text-align: center">
+            <h1>Belly Button</h1>
+            <h1>Biodiversity Dashboard</h1>
+            <p>Use the interactive charts below to explore the dataset</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="well">
+                    <label for="selDataset">SELECT Sample:</label>
+                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                </div>
+                <div class="panel panel-primary">
+                    <div class = "panel-heading">Sample Metadata</div>
+                    <div id="metadata" class="panel-body"></div>
+                </div>
+            </div>
+
+            <div id = "piechart" class = "col-md-5">
+            
+            </div>
+
+            <div class = "col-md-4 frequencychart">
+            </div>
+        </div>
+
+        <div class = "row">
+            <div id = "bubblechart" class = "col-md-12">
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
